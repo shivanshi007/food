@@ -1,0 +1,206 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+:root
+{
+    --navbar-height:59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+.logo img{
+    height:61px ;
+    margin: 16px 34px;
+}
+#navbar{
+    position: relative;
+}
+ul {
+    display: flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+ul li{
+    
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li a{
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    text-transform: capitalize;
+    color: white;
+}
+ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home::before{
+    content: "";
+    background:url('./b5.jpg') no-repeat center/cover; 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.79;
+    top: 0px;
+    left: 0px;
+}
+#home p{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.h-secondary{
+    font-size: 1.4rem;
+    padding: 12px;
+    color:black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.btn{
+    padding: 6px 20px ;
+   border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.y{
+    color: aliceblue;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 2.8rem;
+     padding: 12px;
+}
+ 
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+}
+#services
+{
+    margin: 34px;
+    display: flex;
+}
+#services .box
+{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 7px;
+    border-radius: 23px;
+    margin-bottom: 20px;
+    background-color: lightgray;
+    padding-top: 20px;
+}
+#services .box img
+{
+    margin: auto;
+    display: block;
+    height: 160px;
+
+}
+.center
+{
+text-align: center;
+
+}
+#services .box p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('b2.jpg') no-repeat center/cover;
+    z-index: -1;
+    height: 45%;
+    width: 100%;
+    opacity: 1.9;
+
+}
+#client-section{
+    position: relative;
+    
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    height: 124px;
+}
+
+.client-item{
+    padding: 34px;
+}
+#contact{
+    position: relative;
+
+}
+#contact::before{
+
+    content: "";
+    position: absolute;
+    background: url('contact.jpg') no-repeat center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rems;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    padding: 9px 20px   ;
+}
